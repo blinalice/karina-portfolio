@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const spawnImg = (src, cls, x = 0, y = 0) => {
     const img = new Image();
-    img.src = `images/${src}`;
+    img.src = src;
     img.className = cls;
     img.style.left = `${x}px`;
     img.style.top = `${y}px`;
