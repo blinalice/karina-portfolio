@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="icon" href="images/toast_icon.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Карина | Junior Frontend Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="main-nav">
+  <div class="logo">My Portfolio</div>
+  <button class="burger" aria-label="Открыть меню">&#9776;</button>
+  <ul class="nav-links">
+    <li><a href="#section1">Приветствие</a></li>
+    <li><a href="#section2">Почему Frontend</a></li>
+    <li><a href="#section3">Моё вдохновение</a></li>
+  </ul>
+</nav>
+
+<div class="hero-section">
+  <div class="avatar">
+    <img src="images/karina_avatar.png" alt="Портрет Карины в розовых тонах" />
+  </div>
+    <h1>Карина</h1>
+    <p>junior frontend developer. люблю верстать, математику и всё розового цвета!</p>
+    <button id="seeProjects" class="see-projects">✨ Посмотреть проекты</button>
+  </div>
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path fill="#fce4ec" d="M0,0 C360,100 1080,0 1440,100 L1440,0 L0,0 Z"></path>
+    </svg>
+  </div>
+
+  
+
+  <section class="section pink" id="section1">
+    <h2 class="section-header">Приветствие</h2>
+    <p class="text">Привет! Меня зовут Карина, и я начинающий frontend-разработчик. Я люблю создавать красивые, адаптивные сайты, которые не просто работают, а радуют глаз.</p>
+    <div class="exp-counter" id="experienceCounter">💻 Стаж во фронтенде: 0 дней</div>
+    
+  </section>
+
+  <section class="section beige" id="section2">
+    <h2 class="section-header">Почему Frontend</h2>
+    <p class="text">Frontend — это идеальный баланс между креативом и логикой. Мне нравится видеть мгновенный результат своей работы и понимать, как код превращается в живой интерфейс.</p>
+    <button id="factBtn">Факт обо мне 🐾</button>
+    <div id="factContainer"></div>
+    
+  </section>
+
+  <section class="section pink" id="section3">
+    <h2 class="section-header">Моё вдохновение</h2>
+    <p class="text">Меня вдохновляют яркие цвета, чистая верстка, и простые вещи, сделанные с душой. А ещё я обожаю математику, потому что в ней, как и в коде, всё по полочкам.</p>
+    <img src="images/kittens.png" alt="Котики" class="decor-center" />
+  </section>
+
+  <script src="js/index.js"></script>
+
+
+<footer class="footer-note">
+  <button id="toggleHints">👀 Узнать секреты сайта</button>
+  <div id="hintBlock" style="display: none;">
+    <p>🎁 Поищите на сайте пасхалки:</p>
+    <ul>
+      <li>💖 Кликните мышкой — на экране появится сердечко</li>
+      <li>⌫ Нажмите <strong>Delete</strong>, чтобы убрать последний факт</li>
+    </ul>
+  </div>
+</footer>
+
+
+
+<a href="#top" class="scroll-top" title="Наверх">⬆</a>
+
+</body>
+</html>

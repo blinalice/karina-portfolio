@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="icon" href="images/toast_icon.png" type="image/png">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мои проекты</title>
+  <link rel="stylesheet" href="css/projects.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Мои проекты</h1>
+  <div class="project-gallery">
+    <div class="project-card">
+      <img src="images/project1.png" alt="Адаптивный лендинг для кондитерской Patisserie Sweety с анимацией." />
+      <div class="title">🍰 Patisserie Sweety</div>
+    </div>
+    <div class="project-card">
+      <img src="images/project2.png" alt="Мини-галерея товаров Coffee & Tea с hover-эффектами." />
+      <div class="title">☕ Coffee & Tea</div>
+    </div>
+    <div class="project-card">
+      <img src="images/project3.png" alt="Сайт карточек с выпечкой и анимацией при наведении." />
+      <div class="title">🥐 Выпечка</div>
+    </div>
+  </div>
+
+  <!-- Модальное окно -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modalImg" src="" alt="" />
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+</body>
+</html>
