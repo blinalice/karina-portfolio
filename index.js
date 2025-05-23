@@ -10,12 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => img.remove(), 2000);
   };
 
-  // Сердечко по клику
   document.addEventListener('click', e => {
     spawnImg('pixel_hearts.png', 'heart', e.pageX - 16, e.pageY - 16);
   });
 
-  // Таймер стажа
   let days = 0;
   const expElement = document.getElementById("experienceCounter");
   setInterval(() => {
@@ -25,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, 150);
 
-  // Факт обо мне
   const facts = [
     "Обожаю всё розовое!",
     "Верстаю под музыку и кофе ☕",
@@ -42,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Удаление факта
   window.addEventListener('keydown', e => {
     if (e.key === 'Delete') {
       const lastFact = document.querySelector('#factContainer p:last-child');
@@ -50,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Переход к проектам
   const seeProjects = document.getElementById('seeProjects');
   if (seeProjects) {
     seeProjects.addEventListener('click', () => {
@@ -58,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Подсказка блок
   const toggleBtn = document.getElementById("toggleHints");
   const hintBlock = document.getElementById("hintBlock");
   if (toggleBtn && hintBlock) {
@@ -69,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-  // Бургер-меню
   const burger = document.querySelector('.burger');
   const navLinks = document.querySelector('.nav-links');
 
